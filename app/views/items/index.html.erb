@@ -1,1 +1,5 @@
-sd
+<h1>Все товары</h1>
+<ul>
+<% @items.each do |i| %>
+<li><%= link_to i.name, i %></li>
+<% end %>
